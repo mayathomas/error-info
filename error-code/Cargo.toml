@@ -5,3 +5,8 @@ edition = "2021"
 
 [dependencies]
 error-code-derive = { workspace = true }
+
+[dev-dependencies]
+anyhow = { workspace = true }
+http = { workspace = true }
+thiserror ={ workspace = true }
