@@ -19,7 +19,7 @@ pub enum MyError {
 // use error_code::{ErrorInfo, ToErrorInfo as _};
 // impl ToErrorInfo for MyError {
 //     type T = StatusCode;
-//     fn to_error_info(&self) -> Result<ErrorInfo<Self::T>, <Self::T as std::str::FromStr>::Err> {
+//     fn to_error_info(&self) -> ErrorInfo<Self::T> {
 //         match self {
 //             MyError::InvalidCommand(_) => ErrorInfo::try_new("400", "01IC", "", self),
 //             MyError::InvalidArgument(_) => ErrorInfo::try_new("400", "01IA", "friendly msg", self),
